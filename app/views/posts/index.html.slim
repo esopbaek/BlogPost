@@ -1,0 +1,7 @@
+h1 Blog Posts
+
+= link_to "Add a new post", new_post_path
+
+.posts
+	- @posts.each do |post|
+ 		li= post.title
