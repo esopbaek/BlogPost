@@ -2,7 +2,7 @@ require "rails_helper"
 
 feature "User creates blog" do
 	scenario "successfully" do
-		visit root_path
+		sign_in
 
 		click_on "Add a new post"
 		fill_in "Title", with: "The diversification of state economies"
