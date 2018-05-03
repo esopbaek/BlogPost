@@ -9,6 +9,7 @@
   </head>
 
   <body>
+  	<div class="navbar">Hello <%= link_to "Sign Out", session_path, method: :delete %><%= link_to "Audit Log", audit_logs_path %></div>
     <%= yield %>
   </body>
 </html>
