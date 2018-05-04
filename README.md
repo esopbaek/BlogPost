@@ -6,7 +6,7 @@ This project is a blog post Ruby on Rails application which involves problems we
 
 # Context
 
-The current functionality in this application involves creating and viewing two types of content: 1) blog posts and 2) musings.
+The current functionality in this application involves creating and viewing two types of content called: 1) 'blog posts' and 2) 'musings'.
 
 ![screen shot 2018-05-04 at 8 39 02 am](https://user-images.githubusercontent.com/7111516/39628406-ff6ef28a-4f76-11e8-9471-c0786fb2596f.png)
 
