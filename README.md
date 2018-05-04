@@ -8,22 +8,23 @@ This project is a blog post Ruby on Rails application which involves problems we
 
 The current functionality in this application involves creating and viewing two types of content called: 1) 'blog posts' and 2) 'musings'.
 
-![screen shot 2018-05-04 at 9 44 10 am](https://user-images.githubusercontent.com/7111516/39631284-c641c510-4f7f-11e8-8e05-2a60f6f323c5.png)
+![screen shot 2018-05-04 at 9 43 19 am](https://user-images.githubusercontent.com/7111516/39631288-c673c984-4f7f-11e8-8095-2d25ceb57793.png)
 
 You can access a user's index of posts or musings, and add posts/musings by accessing your own index of content.
-
-![screen shot 2018-05-04 at 9 43 55 am](https://user-images.githubusercontent.com/7111516/39631285-c65657aa-4f7f-11e8-88f8-ad530e126543.png)
-
-
-You can also add a comment to posts, but not to musings (yet):
 
 ![screen shot 2018-05-04 at 9 43 31 am](https://user-images.githubusercontent.com/7111516/39631287-c6668044-4f7f-11e8-98cb-d863c2b359ef.png)
 
 
+You can also add a comment to posts, but not to musings (yet):
+
+
+![screen shot 2018-05-04 at 9 43 55 am](https://user-images.githubusercontent.com/7111516/39631285-c65657aa-4f7f-11e8-88f8-ad530e126543.png)
+
+
 There is also an audit log of your activity which you can access via the navbar on top. This records when you've added a post or a musing:
 
-![screen shot 2018-05-04 at 9 43 19 am](https://user-images.githubusercontent.com/7111516/39631288-c673c984-4f7f-11e8-8095-2d25ceb57793.png)
 
+![screen shot 2018-05-04 at 9 44 10 am](https://user-images.githubusercontent.com/7111516/39631284-c641c510-4f7f-11e8-8e05-2a60f6f323c5.png)
 
 
 SETUP:
