@@ -15,7 +15,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim-rails'
 gem "font-awesome-rails"
 gem 'bootstrap', '~> 4.1.1'
-gem "factory_bot_rails", "~> 4.0"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -32,7 +31,6 @@ end
 
 group :test do
   gem 'capybara', '~> 2.13'
-  gem "database_cleaner"
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
