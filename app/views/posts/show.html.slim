@@ -1,2 +1,12 @@
-div= @post.title
-div= @post.body
+.mb-5
+	h2= @post.title
+	div= @post.body
+
+.mb-5
+	h3 Comments
+	div= @post.comment
+
+= form_for :comment, url: "/posts/#{@post.id}/comment" do |form|
+	div.form-group.control-label= form.label :comment, "Add a comment"
+	div.form-group.control-label= form.text_field :comment
+	div.form-group.control-label= form.submit :Submit

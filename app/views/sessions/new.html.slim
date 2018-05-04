@@ -1,5 +1,10 @@
-= form_for :session, url: session_path do |form|
-	div= form.label :email
-	div= form.text_field :email
+.container
+	- if flash[:notice]
+		div.notice= flash[:notice]
 
-	div= form.submit "Sign in"
+	.form-group
+		= form_for :session, url: session_path do |form|
+			div.form-group.control-label= form.label :email
+			div.form-group.control-label= form.text_field :email
+			
+			div= form.submit "Sign in"

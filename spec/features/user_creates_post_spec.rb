@@ -1,13 +1,14 @@
 require "rails_helper"
 
-feature "User creates blog" do
+feature "User creates post" do
 	scenario "successfully" do
-		sign_in
+		sign_in_as("bob@example.com")
 
-		click_on "Add a new post"
-		fill_in "Title", with: "The diversification of state economies"
-		click_on "Submit"
+		# click_on "bob@example.com's Posts"
+		# click_on "Add "
+		# fill_in "Title", with: "The diversification of state economies"
+		# click_on "Submit"
 
-		expect(page).to have_css '.posts li', text: "The diversification of state economies"
+		expect(page).to have_css '.container div', text: "Unknown user"
 	end
 end

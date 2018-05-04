@@ -4,6 +4,6 @@ class AuditLogService
 	end
 
 	def present_logs
-		@current_user.posts
+		@current_user.posts + @current_user.musings
 	end
 end

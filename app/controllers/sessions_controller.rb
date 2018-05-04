@@ -1,15 +1,21 @@
 class SessionsController < ApplicationController
 	def new
-
 	end
 
 	def create
-		sign_in_as params[:session][:email]
-		redirect_to root_path
+		user = User.find_by(email: params[:session][:email])
+		if user
+			session[:user_id] = user.id
+			redirect_to root_path
+		else
+			flash[:notice] = "Unknown user"
+			redirect_to root_path
+		end
 	end
 
 	def destroy
-		session[:current_email] = nil
+		session[:user_id] = nil
+		current_user = nil
 		redirect_to new_session_path
 	end
 end

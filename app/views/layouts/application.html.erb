@@ -9,7 +9,13 @@
   </head>
 
   <body>
-  	<div class="navbar">Hello <%= link_to "Sign Out", session_path, method: :delete %><%= link_to "Audit Log", audit_logs_path %></div>
-    <%= yield %>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <%= link_to "Home", root_path, class: "col-md-4" %>
+      <%= link_to "Audit Log", audit_logs_path, class: "col-md-4" %>
+      <%= link_to "Sign Out", session_path, method: :delete, class: "col-md-4"%>
+    </nav>
+    <div class="container p-3">
+      <%= yield %>
+    </div>
   </body>
 </html>

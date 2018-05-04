@@ -1,0 +1,8 @@
+h1 Blog Posts
+
+- if @current_user == User.find(params[:id])
+	= link_to "Add a new musing", new_post_path
+
+.posts
+  - @musings.each do |musing|
+    li= link_to musing.title, musing_path(musing)

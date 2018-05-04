@@ -1,13 +1,4 @@
-class User
-	def initialize(email)
-		@email = email
-	end
-
-	def posts
-		Post.where(email: @email)
-	end
-
-	def signed_in?
-		@email.present?
-	end
+class User < ActiveRecord::Base
+	has_many :posts
+	has_many :musings
 end

@@ -1,2 +1,5 @@
+h3 Your Activities
+
 - @audit_logs.each do |audit_log|
-	li= audit_log.body
+	- present(audit_log, "AuditLogPresenter") do |al| # this present method is in /helpers/application_helper.rb
+		li= al.display_text

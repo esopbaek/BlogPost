@@ -1,0 +1,10 @@
+h1 Users' Blog Posts
+
+- @users.each do |user|
+	h4= "#{user.email}'s Content"
+	ul
+		li= link_to "#{user.email}'s Posts", posts_path(user)
+		li= link_to "#{user.email}'s Musings", musings_path(user)
+
+
+
