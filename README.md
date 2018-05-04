@@ -46,7 +46,7 @@ There are three major tasks involved for this assessment:
 
 # Additional Information
 
-Please feel free to refactor the current implementation to add the above functionality however you see fit. You will probably need to rethink/redesign some components of the given application in order to execute these tasks.
+Please add rspec tests (focusing on the audit log feature) and feel free to refactor the current implementation to add the above functionality however you see fit. You will probably need to rethink/redesign some components of the given application in order to execute these tasks.
 
 # Extra Credit
 
