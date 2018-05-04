@@ -49,3 +49,7 @@ There are three major tasks involved for this assessment:
 # Additional Information
 
 Please feel free to refactor the current implementation to add the above functionality however you see fit. You will probably need to rethink/redesign some components of the given application in order to execute these tasks.
+
+# Extra Credit
+
+There is currently no way to sign up/register on this application as a new user and there is no authentication for login. An extra credit task would be to implement authentication for logging in using any gems or custom implementation as you see fit.
