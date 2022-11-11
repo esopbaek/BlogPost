@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate
-  
+
   def index
     user = User.find(params[:id])
     @posts = user.posts
@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
   def comment
     @post = Post.find(params[:id])
-    @post.update_attributes({comment: params[:comment][:comment]})
+    @post.update_attributes({ comment: params[:comment][:comment] })
     redirect_to post_path(@post)
   end
 
